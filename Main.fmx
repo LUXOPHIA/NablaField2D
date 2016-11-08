@@ -1,0 +1,93 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'NablaField2D'
+  ClientHeight = 620
+  ClientWidth = 950
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    ClipChildren = True
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+    OnMouseDown = Image1MouseDown
+    OnMouseMove = Image1MouseMove
+    OnMouseUp = Image1MouseUp
+    OnPaint = Image1Paint
+  end
+  object Panel1: TPanel
+    Align = Right
+    Margins.Left = -10.000000000000000000
+    Position.X = 810.000000000000000000
+    Size.Width = 140.000000000000000000
+    Size.Height = 620.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'pushpanel'
+    TabOrder = 0
+    object Button1: TButton
+      Default = True
+      Position.X = 20.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = #21021#26399#21270
+      OnClick = Button1Click
+    end
+    object GroupBox1: TGroupBox
+      Position.X = 10.000000000000000000
+      Position.Y = 85.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      Text = #26368#36969#21270
+      TabOrder = 1
+      object Button2: TButton
+        Default = True
+        Position.X = 11.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = #23455#34892
+        OnClick = Button2Click
+      end
+      object Button3: TButton
+        Default = True
+        Enabled = False
+        Position.X = 11.000000000000000000
+        Position.Y = 85.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = #20572#27490
+        OnClick = Button3Click
+      end
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 30
+    Top = 25
+  end
+end
