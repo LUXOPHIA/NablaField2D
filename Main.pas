@@ -6,9 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   System.Threading,
-  FMX.Objects,
-  LUX, LUX.D2, LUX.Lattice.T2.D1, LUX.FMX, FMX.StdCtrls,
-  FMX.Controls.Presentation;
+  FMX.Objects, FMX.Controls.Presentation,
+  LUX, LUX.D2, LUX.Lattice.T2.D1, LUX.FMX, FMX.StdCtrls;
 
 type
   TForm1 = class(TForm)
